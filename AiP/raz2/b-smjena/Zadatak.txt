@@ -1,0 +1,38 @@
+//Učitati u niz struktura imena i bodove sa natjecanja za 6 učenika i u 
+//funkciji sortirati učenike po osvojenim bodovima od najvećeg broja bodova
+//do najmanjeg.
+#include<stdio.h>
+void sortiranje(struct ucenik *pokUc, int n);
+struct ucenik {
+	char ime[15];
+	int bod;
+};
+int main()
+{
+	struct ucenik natjecanje[6];
+	struct ucenik *pokUcenik= &natjecanje[0];
+	int i;
+	for (i = 0; i < 6; i++)	{
+		printf("\nUpisi ime i bodove za %d. ucenika: ", i + 1);
+		scanf("%s %d", natjecanje[i].ime, &natjecanje[i].bod);
+	}
+	sortiranje(pokUcenik, 6);
+	printf("\nUcenici sortirani po bodovima: ");
+	for (i = 0; i < 6; i++)	{
+		printf("\n%s\t%d", natjecanje[i].ime, natjecanje[i].bod);
+	}
+}
+
+void sortiranje(struct ucenik* pokUc, int n) {
+	struct ucenik t;
+	int i, j;
+	for (i = 0; i < n - 1; i++)	{
+		for (j = i + 1; j < n; j++)	{
+			if (pokUc[i].bod < pokUc[j].bod) {
+				t = pokUc[i];
+				pokUc[i] = pokUc[j];
+				pokUc[j] = t;
+			}
+		}
+	}
+}

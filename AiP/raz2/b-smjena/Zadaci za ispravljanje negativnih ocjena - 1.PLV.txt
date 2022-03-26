@@ -1,0 +1,10 @@
+1. Učitati brojeve u dvodimenzionalni niz dimenzije 3x4 i nakon toga ispisati najveći neparni broj u svakom retku.
+2. Učitati brojeve u dvodimenzionalni niz dimenzije 3x4 i nakon toga ispisati najveći parni broj u svakom stupcu.
+3. Učitati brojeve u dvodimenzionalni niz dimenzije 3x4 i nakon toga izračunati prosječnu vrijednost parnih brojeva u svakom retku.
+4. Učitati brojeve u dvodimenzionalni niz dimenzije 3x4 i nakon toga izračunati prosječnu vrijednost neparnih brojeva u svakom stupcu.
+5. Učitati 5 riječi u dvodimenzionalni niz i nakon toga u tablici za svaku riječ ispisati riječ, broj slova u riječi, broj samoglasnika i broj suglasnika.
+6. Učitati 5 riječi u dvodimenzionalni niz i nakon toga ispitati da li u nizu ima riječi koje počinu slovom 'a' i ako ih ima ispisati ih.
+7. Učitati 5 riječi u dvodimenzionalni niz i nakon toga ispisati duljinu najdulje riječi.
+8. Učitati 5 riječi i ispisati njihovu prosječnu duljinu.
+9. Učitati 5 riječi sa svim malim slovima u dvodimenzionalni niz i nakon toga od učitanih riječi formirati rečenicu spajanjem riječi u jedan znakovni niz. (Prvo slovo prve riječi rečenice mora biti veliko!)
+10.Učitati 5 riječi u dvodimenzionalni niz i nakon toga ispisati riječ sa najviše samoglasnika.
