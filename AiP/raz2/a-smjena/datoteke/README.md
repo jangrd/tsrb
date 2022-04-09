@@ -16,7 +16,7 @@ Potrebno je spremiti taj pointer za rad s tom datotekom.<br>
 Ako je returnana vrijednost `NULL`, znaci da datoteka nije otvorena/stvorena zbog neke greske.<br>
 Funkcija trazi 2 parametra:
   - ime datoteke (npr. `"podatci.dat"`)
-  - mode (nacin) rada (mogucnosti [ovdje](https://github.com/sh0tzz/tsrb/new/main/AiP/raz2/a-smjena/datoteke/README.md#nacini-modovi-rada-s-datotekama))
+  - mode (nacin) rada (mogucnosti [ovdje](https://github.com/sh0tzz/tsrb/tree/main/AiP/raz2/a-smjena/datoteke#nacini-modovi-rada-s-datotekama))
 
 Primjer:
 ```c
