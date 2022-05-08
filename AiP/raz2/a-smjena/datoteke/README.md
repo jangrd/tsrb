@@ -74,7 +74,56 @@ FILE *fp;
 int a;
 float b, *pb = &b;
 fp = fopen("nekaDatoteka.txt", "r");
-fprintf(fp, "%d %f", &a, b);
+fscanf(fp, "%d %f", &a, b);
+```
+
+
+### Funkcija `fwrite`
+Koristi se za neformatiran upis podataka u datoteku.<br>
+Internalna deklaracija funkcije:
+```c
+size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream)
+```
+Parametri:
+  - pointer na array (polje) elemenata sa vrijednostima (ono sto zelimo upisati)
+  - velicina vrijednosti koje se upisuju (vjv cete koristiti `sizeof()`)
+  - koliko puta upisati vrijednosti (najcesce se postavlja kao `1`)
+  - pointer na `FILE` objekt (filestream)
+
+Primjer:
+```c
+FILE *fp;
+struct ucenik {
+    char ime[16];
+    int godine;
+} a;
+a.ime = "Marjan";
+a.godine = 16;
+fp = fopen("nekaDatoteka.txt", "w");
+fwrite(&a, sizeof(struct ucenik), 1, fp);
+```
+
+### Funkcija `fread`
+Koristi se za neformatirano citanje podataka iz datoteke.<br>
+Internalna deklaracija funkcije:
+```c
+size_t fread(const void *ptr, size_t size, size_t nmemb, FILE *stream)
+```
+Parametri:
+  - pointer na array (polje) elemenata sa vrijednostima (ono sto zelimo procitati)
+  - velicina vrijednosti koje se citaju (vjv cete koristiti `sizeof()`)
+  - koliko puta procitati vrijednosti (najcesce se postavlja kao `1`)
+  - pointer na `FILE` objekt (filestream)
+
+Primjer:
+```c
+FILE *fp;
+struct ucenik {
+    char ime[16];
+    int godine;
+} a;
+fp = fopen("nekaDatoteka.txt", "r");
+fread(&a, sizeof(struct ucenik), 1, fp);
 ```
 
 ## Nacini (modovi) rada s datotekama
