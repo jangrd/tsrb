@@ -38,7 +38,7 @@ Jedini parametar je filestream, to jest pointer na `FILE` objekt.
 
 
 ### Funkcija `fprintf`
-Koristi se za upisivanje podataka u datoteku.<br>
+Koristi se za formatirano upisivanje podataka u datoteku.<br>
 Internalna deklaracija funkcije:
 ```c
 int fprintf (FILE * stream, const char * format, [values])
@@ -58,7 +58,7 @@ fprintf(fp, "%d %f", a, 3.14);
 
 
 ### Funkcija `fscanf`
-Koristi se za citanje podataka iz datoteke.<br>
+Koristi se za formatirano citanje podataka iz datoteke.<br>
 Internalna deklaracija funkcije:
 ```c
 int fscanf ( FILE * stream, const char * format, ... )
